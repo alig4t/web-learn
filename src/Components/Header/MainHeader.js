@@ -1,13 +1,17 @@
 import React from 'react';
 import TopNav from '../Nav/MainNav/TopNav';
-import Header from './Header';
+import LogoSearch from './LogoSearch';
+
+import {useLocation} from 'react-router-dom'
 
 const MainHeader = () => {
+    const loc = useLocation()
+    console.log(loc);
     return (
         <div className="landing-layer">
             <div className="container">
                 <TopNav />
-                <Header />
+                {loc.pathname == '/' ? <LogoSearch /> : null}
             </div>
         </div>
     );

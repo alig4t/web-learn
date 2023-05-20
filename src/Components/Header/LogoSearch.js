@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = () => {
+const LogoSearch = () => {
     return (
         <>
             <header>
@@ -19,4 +19,4 @@ const Header = () => {
     );
 }
 
-export default Header;
+export default LogoSearch;
